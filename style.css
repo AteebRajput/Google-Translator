@@ -14,6 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     gap: 10px;
 }
 
@@ -39,6 +40,7 @@ body h1{
     align-items: center;
     flex-direction: column;
     width: 450px;
+    max-width: 100%;
     margin: 10px;
     position: relative;
 }
@@ -94,4 +96,96 @@ color: dodgerblue;
 .copy-to-clipboard:hover{
     border: 2px solid dodgerblue;
     color: dodgerblue;
+}
+
+@media screen and (max-width:960px) {
+    .container section{
+        width: 350px;
+    }
+    .container{
+        gap: 25px;
+    }
+    .container section{
+        margin: 5px;
+    }
+    .copy-to-clipboard{
+        right: 0;
+        bottom: 0;
+        gap: 0;
+    }
+    .container section textarea{
+        min-width: 350px;
+        max-width: 350px;
+        min-height: 350px;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container section{
+        width: 550px;
+    }
+    .container section textarea{
+        min-width: 550px;
+        max-width: 550px;
+        min-height: 160px;
+        max-height: 160px;
+    }
+    .swap i{
+        transform: rotate(90deg);
+
+    }
+}
+
+
+@media screen and (max-width:570px) {
+    .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container section{
+        width: 450px;
+    }
+    .container section textarea{
+        min-width: 450px;
+        max-width: 450px;
+        min-height: 160px;
+        max-height: 160px;
+    }
+    .swap i{
+        transform: rotate(90deg);
+
+    }
+    .copy-to-clipboard{
+        right: 2px;
+        bottom: 2px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container section{
+        width: 300px;
+    }
+    .container section textarea{
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 160px;
+        max-height: 160px;
+    }
+    .swap i{
+        transform: rotate(90deg);
+
+    }
+    .copy-to-clipboard{
+        right: 2px;
+        bottom: 2px;
+    }
 }
